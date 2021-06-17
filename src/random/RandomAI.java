@@ -1,7 +1,6 @@
 package random;
 
 import java.util.concurrent.ThreadLocalRandom;
-
 import game.Game;
 import main.collections.FastArrayList;
 import other.AI;

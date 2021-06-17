@@ -1,9 +1,5 @@
 package experiments;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import game.Game;
 import game.types.state.GameType;
 import main.FileHandling;
@@ -17,6 +13,10 @@ import other.move.Move;
 import other.state.container.ContainerState;
 import other.trial.Trial;
 import random.RandomAI;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * A simple tutorial that demonstrates a variety of useful methods provided
@@ -112,7 +112,7 @@ public class Tutorial
 		// now we're going to have a look at playing a few full games, using AI
 		
 		// first, let's instantiate some agents
-		final List<AI> agents = new ArrayList<AI>();
+		final List<AI> agents = new ArrayList<>();
 		agents.add(null);	// insert null at index 0, because player indices start at 1
 		
 		for (int p = 1; p <= numPlayers; ++p)
@@ -203,7 +203,7 @@ public class Tutorial
 			System.out.println("We're playing " + game.name() + "!");
 			
 			// Create and init two UCT agents
-			final List<AI> ais = new ArrayList<AI>(3);
+			final List<AI> ais = new ArrayList<>(3);
 			ais.add(null);
 			ais.add(new ExampleUCT());
 			ais.add(new ExampleUCT());
